@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <form
+          method="POST"
+          class="appointment-form"
+          id="appointment-form"
+          action="client_form.php"
+        >
+          <h2>appointment form</h2>
+          <div class="form-group-1">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Title"
+              required
+            />
+            <input
+              type="text"
+              name="first_name"
+              id="name"
+              placeholder="Your First Name"
+              required
+            />
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Your Last Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="number"
+              name="phone_number"
+              id="phone_number"
+              placeholder="Phone number"
+              required
+            />
+            <div class="select-list">
+              <select name="course_type" id="course_type">
+                <option slected value="">Course Type</option>
+                <option value="Communication and Coaching"
+                  >Communication & Coaching</option
+                >
+                <option value="Marketing & Commercial"
+                  >Marketing & Commercial</option
+                >
+                <option value="Management">Management</option>
+                <option value="Management"
+                  >Formation in Programing & web dev</option
+                >
+                <option value="Management"
+                  >Formation in geographic information system</option
+                >
+              </select>
+            </div>
+            <div class="select-list">
+              <select name="gender" id="gender">
+                <option slected value="">Sexe</option>
+                <option value="Male">Mâle</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group-2">
+            <h3>How would you like to bo located ?</h3>
+            <div class="select-list">
+              <select name="confirm_type" id="confirm_type">
+                <option seleected value="">With:</option>
+                <option value="by_email">By Email</option>
+                <option value="by_phone">By Phone</option>
+              </select>
+            </div>
+            <div class="select-list">
+              <select name="hour_appointment" id="hour_appointment">
+                <option seleected value="">Hours : 8am 9am</option>
+                <option value="9h-10h">Hours : 9am 10am</option>
+                <option value="10h-11h">Hours : 10am 11am</option>
+                <option value="11h-11h30">Hours : 11am 11am30</option>
+                <option value="14h-15h">Hours : 14am 15am</option>
+                <option value="15h-16h">Hours : 15am 16am</option>
+                <option value="16h-17h">Hours : 16am 17am</option>
+                <option value="17h-17h30">Hours : 17am 17am30</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="agree-term"
+              id="agree-term"
+              class="agree-term"
+            />
+            <label for="agree-term" class="label-agree-term"
+              ><span><span></span></span>I agree to the
+              <a href="#" class="term-service">Terms and Conditions</a></label
+            >
+          </div>
+          <div class="form-submit">
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              class="submit"
+              value="Request an appointment"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
